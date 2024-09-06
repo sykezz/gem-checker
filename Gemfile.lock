@@ -1,0 +1,49 @@
+GIT
+  remote: https://github.com/rubygems/gems
+  revision: c20c05888cb2b882bf3b99d3618cc37f69559f6a
+  branch: master
+  specs:
+    gems (1.2.0)
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    debug (1.9.2)
+      irb (~> 1.10)
+      reline (>= 0.3.8)
+    io-console (0.7.2)
+    irb (1.13.2)
+      rdoc (>= 4.0.0)
+      reline (>= 0.4.2)
+    language_server-protocol (3.17.0.3)
+    logger (1.6.0)
+    prism (0.30.0)
+    psych (5.1.2)
+      stringio
+    rbs (3.5.1)
+      logger
+    rdoc (6.7.0)
+      psych (>= 4.0.0)
+    reline (0.5.9)
+      io-console (~> 0.5)
+    ruby-lsp (0.17.4)
+      language_server-protocol (~> 3.17.0)
+      prism (>= 0.29.0, < 0.31)
+      rbs (>= 3, < 4)
+      sorbet-runtime (>= 0.5.10782)
+    ruby-lsp-rspec (0.1.12)
+      ruby-lsp (~> 0.17.0)
+    sorbet-runtime (0.5.11444)
+    stringio (3.1.1)
+
+PLATFORMS
+  arm64-darwin-23
+
+DEPENDENCIES
+  bundler
+  debug
+  gems!
+  ruby-lsp-rspec
+
+BUNDLED WITH
+   2.5.4
