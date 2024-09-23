@@ -1,0 +1,13 @@
+#!/usr/bin/env ruby
+
+require 'gem_checker'
+
+gemfile_lock = ARGV[0] || 'Gemfile.lock'
+
+begin
+  GemChecker.check(gemfile_lock)
+  puts "Gemfile.lock processed successfully. gem_versions.csv created."
+rescue GemChecker::Error => e
+  puts "Error: #{e.message}"
+  exit 1
+end
